@@ -1,0 +1,25 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center text-primary mt-4"> Register an Employee </h3>
+    <form >
+        <div class="form-group">
+            <label> Firstname</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" [(ngModel)]="employee.firstname">
+        </div><br>
+
+        <div class="form-group">
+            <label> Lastname</label>
+            <input type="text" class="form-control" name="lastname" id="lastname" [(ngModel)]="employee.lastname">
+        </div><br>
+
+        <div class="form-group">
+            <label> Email_Id </label>
+            <input type="text" class="form-control" name="email" id="email" 
+                    [(ngModel)]="employee.email">
+        </div> 
+        <br>
+
+        <button class="btn btn-success" type="button" (click)="onSubmit()"> submit </button>
+    
+
+    </form>
+</div>
